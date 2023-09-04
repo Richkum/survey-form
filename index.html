@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surveyform</title>
+    <link rel="stylesheet" href="asset/styles/style.css">
 </head>
+
 <body>
-    
+
+    <h1 id="title">freecodecamp Survay Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platefoprm</p>
+    <form class="surveyform">
+        <div class="box">
+            <p>Name</p>
+            <input class="dropdown" type="text" placeholder="Enter your name">
+        </div>
+        <div class="box">
+            <p>Email</p>
+            <input class="dropdown" type="text" placeholder="Enter your email">
+        </div>
+        <div class="box">
+            <p>Age(optional)</p>
+            <input class="dropdown" type="number" min="10" placeholder="Enter your age">
+        </div>
+        <p>Which option best describes your current role?</p>
+        <div class="work">
+            <select class="dropdown" type="text" placeholder="select current role">
+                <option>Select current role</option>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Full time learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <p>Would you refer freecodecamp to a friend?</p>
+        <lable for="definitely"><input id="definitely" type="radio">Definitely</lable><br>
+        <lable for="maybe"><input id="maybe" type="radio">Maybe</lable><br>
+        <lable for="Notsue"><input id="notsure" type="radio">Not sure</lable>
+        <p>What is your favourite feature of freecodecamp?</p>
+        <select id="dropdown" class="sel" placeholder="select an option">
+            <option>select an opttion</option>
+            <option>Challenges</option>
+            <option>Community</option>
+            <option>Projects</option>
+            <option>Open Source</option>
+        </select>
+        <p>What would you like to see improved?</p>
+        <lable for="Front-endprojects"><input id="front-endprojects" type="button">Front-end Projects</lable><br>
+        <lable for="Back-end Projects"><input id="back-end-projects" type="button">Back-end Projects</lable><br>
+        <lable for="Data Visualisation"><input id="data-visualisation" type="button">Data Visualisation</lable><br>
+        <lable for="Challenges"><input id="challenges" type="button">Challenges</lable><br>
+        <lable for="Open Source Community"><input id="open-sourc-community" type="button">Open Source Community</lable>
+        <br>
+        <lable for="Gitter helps room"><input id="gitter-helps-room" type="button">Gitter helps room</lable><br>
+        <lable for="Videos"><input id="videos" type="button">Videos</lable><br>
+        <lable for="City meetups"><input id="city-meetups" type="button">City Meetups</lable><br>
+        <lable for="Wiki"><input id="wiki" type="button">Wiki</lable><br>
+        <lable for="Forum"><input id="forum" type="button">Forum</lable><br>
+        <lable for="Additional Courses"><input id="additional-courses" type="button">Additional Courses</lable><br>
+        <div>
+            <p>Any comments or suggestios?</p>
+            <textarea id="sugestions" class="sugest" type="text" rows="8"
+                placeholder="Enter your comment here..."></textarea>
+            <p></p>
+            <button id="submit" class="sub">submit</button>
+        </div>
+    </form>
 </body>
+
 </html>
